@@ -51,35 +51,7 @@ function Footer({ company, links }) {
       alignItems="center"
       px={1.5}
     >
-      <MDBox
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        flexWrap="wrap"
-        color="text"
-        fontSize={size.sm}
-        px={1.5}
-      >
-        &copy; {new Date().getFullYear()}, made with
-        <MDBox fontSize={size.md} color="text" mb={-0.5} mx={0.25}>
-          <Icon color="inherit" fontSize="inherit">
-            favorite
-          </Icon>
-        </MDBox>
-        by
-        <Link href={href} target="_blank">
-          <MDTypography variant="button" fontWeight="medium">
-            &nbsp;{name}&nbsp;
-          </MDTypography>
-        </Link>
-        &amp;
-        <Link href="https://updivision.com" target="_blank">
-          <MDTypography variant="button" fontWeight="medium">
-            &nbsp;UPDIVISION&nbsp;
-          </MDTypography>
-        </Link>
-        for a better web.
-      </MDBox>
+       
       <MDBox
         component="ul"
         sx={({ breakpoints }) => ({
@@ -105,12 +77,8 @@ function Footer({ company, links }) {
 
 // Setting default values for the props of Footer
 Footer.defaultProps = {
-  company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-  links: [
-    { href: "https://updivision.com/", name: "UPDIVISION" },
-    { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-    { href: "https://www.creative-tim.com/presentation", name: "About Us" },
-    { href: "https://www.creative-tim.com/blog", name: "Blog" },
+  company: { href: "https://www.creative-tim.com/", name: "Scorpion Dev" },
+  links: [  
     { href: "https://www.creative-tim.com/license", name: "License" },
   ],
 };
